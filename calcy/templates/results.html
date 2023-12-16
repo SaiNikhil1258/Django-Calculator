@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #343a40; /* Dark background color */
+      color: #fff; /* Text color */
+      padding-top: 50px; /* Adjust top padding for navbar */
+    }
+    .center {
+      margin: auto;
+      width: 60%;
+      border: 3px solid #a5addb;
+      padding: 20px;
+      background-color: #495057; /* Darker background color for the result div */
+      text-align: center; /* Center-align content */
+    }
+    a {
+      color: #fff; /* Anchor link color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      The result is: 
+      <h1>{{ ans }}</h1> <!-- Assuming ans is a variable from your backend -->
+      <a href="{% url 'home' %}" class="btn btn-primary mt-3">Go Back</a> <!-- Using Bootstrap button styling -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery (for certain Bootstrap features) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
